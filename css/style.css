@@ -16,17 +16,13 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 
-/* Fonte */
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700italic);
-
-/* Cadastro */
-
-body {
-	font-family: 'Ubuntu', sans-serif;
-}
-
 header div#logo {
 	margin: 15px 0 0 0;
+}
+
+header div#logo img {
+	display: block;
+	margin: 0 auto;
 }
 
 header div#txtheader {
@@ -44,6 +40,258 @@ header div#txtheader p {
 	font-size: 18px;
 	line-height: 120%;
 	text-align: center;
+}
+
+.head, li, h2 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.titulo h2 {
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+
+.head {
+	display: block;
+}
+
+.content {
+	display: none;
+}
+
+nav#menu {
+	border: 1px solid #B6B7EA;
+	margin: 20px 7px 5px 2px;
+}
+
+nav#menu div.content a {
+	color: #000;
+	margin: 0 0 0 15px;
+}
+
+.titulo, .controle-menu, #breadcrumb {
+	box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3);
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 5px 5px;
+}
+
+.titulo {
+	background-image: linear-gradient(to bottom, #FFFFFF, #026EFF 130%);
+	color: #666;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.controle-menu, #breadcrumb {
+	background-image: linear-gradient(to bottom, #FFFFFF, #B6B7EA 110%);
+	font-size: 12px;
+}
+
+.controle-menu span {
+	cursor: pointer;
+	margin-right: 10px;
+}
+
+section {
+	border: 1px solid #B6B7EA;
+	float: left;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	width: 100%;
+}
+
+section p {
+	margin-bottom: 50px;
+	margin-top:  50px;
+	text-align: center;
+}
+
+section div.faixa-opcoes {
+	background: #CCC;
+	height: 40px;
+	padding-bottom: 10px;
+}
+
+section div.faixa-opcoes div.botoes {
+	float: left;
+}
+
+section div.faixa-opcoes ul {
+	padding-top: 5px;
+}
+
+section div.faixa-opcoes ul li {
+	display: inline;
+}
+
+section div.faixa-opcoes li {
+	border-left: 1px solid #CCC;
+	border-right: 1px solid #FFF;
+	font-size: 12px;
+	margin: 1px;
+	padding: 0 10px;
+}
+
+section div.faixa-opcoes li:hover {
+	background: #666;
+	padding: 5px 10px;
+} 
+
+section div.faixa-opcoes li a {
+	color: #000;
+	text-decoration: none;
+}
+
+section div.faixa-opcoes li a:hover {
+	color: #FFF;
+}
+
+section div.faixa-opcoes div.botoes  ul li#excluir input[type="submit"] {
+	background-color: transparent;
+	border: none;
+}
+
+section div.faixa-opcoes div.botoes  ul li#excluir input[type="submit"]:hover {
+	color: #FFF;
+}
+
+section div.faixa-opcoes div.faixa-pesquisa {
+	float: right;
+	margin-right: 30px;
+	padding: 5px 0 0 0;
+}
+
+section div.faixa-opcoes div.faixa-pesquisa input[type="search"], section div.faixa-opcoes div.faixa-pesquisa select, section div.faixa-opcoes div.faixa-pesquisa input[type="submit"] {
+	height: 30px;
+}
+
+section div.titulos-resultados {
+	background-image: linear-gradient(to bottom, #FFFFFF, #D7D7E2 110%);
+	font-size: 12px;
+	height: 20px;
+	padding: 5px 0 0 0;
+}
+
+section div.titulos-resultados table {
+	width: 100%;
+}
+
+section div.titulos-resultados td {
+	border-left: 2px solid #D7D7E2;
+	border-right: 2px solid #D7D7E2;
+}
+
+section div.titulos-resultados td:first-child, section div.titulos-resultados td:last-child {
+	border: none;
+}
+
+section div.titulos-resultados td:nth-child(1) {
+	text-align: center;
+	width: 80px;
+}
+
+section div.titulos-resultados td:nth-child(2) {
+	padding-left: 5px;
+	width: 410px;
+}
+
+section div.titulos-resultados td:nth-child(3) {
+	padding-left: 5px;
+}
+
+section div.corpo-resultados table {
+	font-size: 12px;
+	width: 100%;
+}
+
+section div.corpo-resultados tr {
+	line-height: 30px;
+}
+
+section div.corpo-resultados td {
+	border-left: 1px solid #D7D7E2;
+	border-right: 1px solid #D7D7E2;
+}
+
+section div.corpo-resultados tr:nth-child(odd) {
+	background: #F7F7F7;
+}
+
+section div.corpo-resultados td:nth-child(1) {
+	text-align: center;
+	width: 80px;
+}
+
+section div.corpo-resultados td:nth-child(2) {
+	padding-left: 5px;
+	width: 410px;
+}
+
+section div.corpo-resultados td:nth-child(3) {
+	padding-left: 5px;
+}
+
+section div.titulos-resultados-home {
+	background-image: linear-gradient(to bottom, #FFFFFF, #D7D7E2 110%);
+	font-size: 12px;
+	height: 20px;
+	padding: 5px 0 0 0;
+}
+
+section div.titulos-resultados-home table {
+	width: 100%;
+}
+
+section div.titulos-resultados-home td {
+	border-left: 2px solid #D7D7E2;
+	border-right: 2px solid #D7D7E2;
+}
+
+section div.titulos-resultados-home td:first-child, section div.titulos-resultados-home td:last-child {
+	border: none;
+}
+
+section div.corpo-resultados-home table {
+	font-size: 12px;
+}
+
+section div.corpo-resultados-home th {
+	text-align: center;
+}
+
+section div.corpo-resultados-home tr {
+	line-height: 30px;
+}
+
+section div.corpo-resultados-home td {
+	border-left: 1px solid #D7D7E2;
+	border-right: 1px solid #D7D7E2;
+}
+
+section div.corpo-resultados-home td {
+	text-align: center;
+	width: 40px;
+}
+
+section div.paginacao {
+	background-image: linear-gradient(to bottom, #FFFFFF, #D7D7E2 110%);
+	font-size: 12px;
+	line-height: 30px;
+	overflow: hidden;
+}
+
+section div.paginacao div.primeira, section div.paginacao div.anterior, section div.paginacao div.num-paginas, section div.paginacao div.proxima, section div.paginacao div.ultima {
+	float: left;
+}
+
+section div.paginacao div.primeira, section div.paginacao div.anterior, section div.paginacao div.proxima, section div.paginacao div.ultima {
+	padding: 8px 5px 0 10px;
+}
+
+section div.paginacao div.num-paginas {
+	padding: 5px 5px 0 5px;
 }
 
 fieldset {
@@ -72,8 +320,18 @@ div#status {
 	margin: 20px 0 0 0;
 }
 
-@media screen and (max-width: 768px) {
-	input#localizacao {
-		width: 95%;
-	}
+footer {
+	clear: both;
+	padding-top: 5px;
+}
+
+footer p {
+	color: #026EFF;
+	font-size: 12px;
+	text-align: center;
+}
+
+footer p a {
+	color: #026EFF;
+	text-decoration: none;
 }
